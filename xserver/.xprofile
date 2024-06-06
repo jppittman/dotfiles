@@ -1,0 +1,4 @@
+export PATH="$HOME/.local/bin:${PATH}"
+export TERMINAL=/usr/bin/alacritty
+picom --backend glx --vsync --blur-strength 8 --blur-method dual_kawase --inactive-dim 0.3 --corner-radius 15 -b
+feh --bg-fill $HOME/Downloads/wall.png 
