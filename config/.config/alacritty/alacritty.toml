@@ -1,5 +1,6 @@
 [window]
 opacity	= 0.7
 blur	= true
+padding = { x = 5, y = 5 }
 [font]
 normal	= { family = "inconsolata", style = "Regular" }

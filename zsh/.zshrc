@@ -1,4 +1,6 @@
 export PATH="$HOME/.local/bin:${PATH}"
+export EDITOR=nvim
+alias vim=$EDITOR
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
