@@ -1,4 +1,4 @@
-export PATH="$HOME/.local/bin:${PATH}"
+export PATH="$HOME/go/bin:$HOME/.local/bin:${PATH}"
 export EDITOR=nvim
 alias vim=$EDITOR
 # Lines configured by zsh-newuser-install
@@ -7,11 +7,15 @@ HISTSIZE=10000
 SAVEHIST=10000
 setopt extendedglob
 unsetopt beep
+unsetopt nomatch 
 bindkey -v
 bindkey '^R' history-incremental-search-backward
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/jppittman/.zshrc'
+
+alias k=kubectl
+set -o vi
 
 autoload -Uz compinit
 compinit
