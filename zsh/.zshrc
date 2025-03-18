@@ -1,7 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
@@ -54,6 +52,11 @@ COMPLETION_WAITING_DOTS="true"
 # much, much faster.
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
+setopt SHARE_HISTORY
+setopt INC_APPEND_HISTORY_TIME
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_SPACE
+
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
 # You can set one of the optional three formats:
@@ -73,7 +76,7 @@ export SAVEHIST=$HISTSIZE
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-vi-mode)
+plugins=(zsh-vi-mode)
 
 if [[ -f $ZSH/oh-my-zsh.sh ]]; then
 	source $ZSH/oh-my-zsh.sh
@@ -109,7 +112,7 @@ export EDITOR=nvim
 
 alias vim=$EDITOR
 
-export PATH="/Users/jppittman/.local/bin/:${PATH}"
+export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 n ()
 {
@@ -161,10 +164,6 @@ wal() {
 # fi
 # unset __conda_setup
 # # <<< conda initialize <<<
-# 
-# ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-# export PATH="/Users/jppittman/.rd/bin:$PATH"
-# ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 # 
 # 
 # # The next line updates PATH for the Google Cloud SDK.
