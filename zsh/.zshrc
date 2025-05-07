@@ -143,7 +143,7 @@ n ()
             rm -f "$NNN_TMPFILE" > /dev/null
     fi
 }
-
+export CORP_SSH_HELPER_OVERRIDES=relay=cbf11.r.ext.google.com
 alias nnn=n
 
 wal() {
